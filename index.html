@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
+    // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
+
+    var nameList = ['rossi',
+                    'yilmaz',
+                    'martin',
+                    'muller',
+                    'garcia',
+                    'smith',
+                    'hansen'];
+
+    nameUser = prompt('Inserisci il tuo Cognome').toLowerCase();
+    nameList.push(nameUser);
+    
+    for (i=0; i < nameList.length; i++){
+
+        console.log(i + 1, nameList.sort()[i]);
+    }
+
+    </script>
+
+</body>
+</html>
