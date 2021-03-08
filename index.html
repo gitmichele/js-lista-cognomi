@@ -10,23 +10,44 @@
     
     <script>
 
-    // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
-    // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
+        // Chiedere all'utente il suo cognome e inserirlo in un array non ordinato. 
+        // Riordinare l'array e stampare la lista dei cognomi in ordine alfabetico e la posizione "umana" (partendo da 1) del cognome dell'utente.
 
-    var nameList = ['rossi',
-                    'yilmaz',
-                    'martin',
-                    'muller',
-                    'garcia',
-                    'smith',
-                    'hansen'];
+        // for loop
+        // var nameList = ['rossi',
+        //                 'yilmaz',
+        //                 'martin',
+        //                 'muller',
+        //                 'garcia',
+        //                 'smith',
+        //                 'hansen'];
 
-    nameList.push(prompt('Inserisci il tuo Cognome').toLowerCase());
-    
-    for (i=0; i < nameList.length; i++){
+        // nameList.push(prompt('Inserisci il tuo Cognome').toLowerCase());
+        
+        // for (i=0; i < nameList.length; i++){
 
-        console.log(i + 1, nameList.sort()[i]);
-    }
+        //     console.log(i + 1, nameList.sort()[i]);
+        // }
+
+
+        // while loop
+        var nameList = ['rossi',
+                        'yilmaz',
+                        'martin',
+                        'muller',
+                        'garcia',
+                        'smith',
+                        'hansen'];
+        
+
+        index = 0;
+        nameList.push(prompt('Inserisci il tuo Cognome').toLowerCase());
+        
+        while (index < nameList.length){
+            console.log(index + 1, nameList.sort()[index]);
+            index++
+        }
+        
 
     </script>
 
